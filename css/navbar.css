@@ -1,0 +1,73 @@
+.navbar {
+  position: fixed;
+  width: 100%;
+  background: rgba(11, 15, 20, 0.85);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border);
+  z-index: 100;
+}
+
+.nav-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--muted);
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: var(--primary);
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: var(--background);
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
+
+.navbar-logo {
+  display: flex;            /* makes children horizontal */
+  align-items: center;      /* vertically centers icon and text */
+  gap: 8px;                 /* spacing between icon and text */
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: bold;
+  color: var(--foreground);
+  text-decoration: none;    /* removes underline if it's an <a> */
+}
+
+#navbar-icon {
+  width: 24px;
+  height: 24px;
+  color: var(--primary);
+}

@@ -1,0 +1,34 @@
+/* Footer */
+.site-footer {
+  padding: 2rem 1.5rem;
+  border-top: 1px solid var(--border);
+}
+
+.footer-container {
+  max-width: 1000px;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+/* Desktop Layout */
+@media (min-width: 640px) {
+  .footer-container {
+    flex-direction: row;
+  }
+}
+
+.footer-left {
+  font-size: 0.85rem;
+  font-family: 'JetBrains Mono', monospace;
+  color: var(--muted-foreground);
+}
+
+.footer-right {
+  font-size: 0.75rem;
+  color: var(--muted-foreground);
+}

@@ -1,0 +1,65 @@
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  position: relative; /* Needed for absolute positioning of orbs */
+  overflow: hidden;
+  background-color: var(--background);
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+}
+
+.glow {
+  color: var(--primary);
+  text-shadow: 0 0 20px rgba(56, 189, 248, 0.7);
+}
+
+.typing {
+  color: var(--muted);
+  margin: 1rem 0;
+}
+
+.hero-icon {
+  width: 24px;
+  height: 20px;
+  color: var(--primary);
+}
+
+.hero-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;       
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  color: var(--primary);
+}
+
+.orb {
+  position: absolute;
+  width: 24rem;    /* 96 x 4 = 384px */
+  height: 24rem;
+  border-radius: 50%;
+  filter: blur(120px);
+  z-index: 0;
+}
+
+.orb-left {
+  top: 25%;
+  left: -8rem;
+  background-color: rgba(56, 189, 248, 0.1); /* primary / 10% */
+}
+
+.orb-right {
+  bottom: 25%;
+  right: -8rem;
+  background-color: rgba(56, 189, 248, 0.05); /* primary / 5% */
+}
+
+.hero-content {
+  position: relative;
+  z-index: 10;
+}
