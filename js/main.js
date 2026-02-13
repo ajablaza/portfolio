@@ -24,6 +24,15 @@ document.addEventListener("click", (e) => {
   if (e.target === toggle) {
     nav.classList.toggle("active");
   }
+
+  if (!nav.contains(e.target) && e.target !== toggle) {
+    nav.classList.remove("active");
+  }
+});
+
+window.addEventListener("scroll", () => {
+  const nav = document.getElementById("nav-links");
+  nav.classList.remove("active");
 });
 
 app.innerHTML += Hero();
