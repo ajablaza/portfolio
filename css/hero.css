@@ -6,6 +6,7 @@
   position: relative; /* Needed for absolute positioning of orbs */
   overflow: hidden;
   background-color: var(--background);
+  justify-content: center;
 }
 
 .hero-content h1 {
