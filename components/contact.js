@@ -14,7 +14,7 @@ export function Contact() {
           </p>
 
           <div class="contact-buttons">
-            <a href="mailto:apryllea" class="btn primary border-glow">
+            <a href="mailto:aprylle@example.com" class="btn primary border-glow">
               <i data-lucide="mail"></i>
               Send Email
             </a>
